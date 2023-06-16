@@ -9,8 +9,8 @@ function DetailCountry() {
   const theme = useTheme()
   const name = useParams()
   const detail = data.find( country => country.name === name.countryName)
-  const borderCountries = detail.borders && [...detail.borders.map( border => data.find( c => c.alpha3Code === border))]
-  const languages = detail.languages && detail.languages.map( l => l.name).join(', ')
+  const borderCountries = detail && detail.borders && [...detail.borders.map( border => data.find( c => c.alpha3Code === border))]
+  const languages = detail && detail.languages && detail.languages.map( l => l.name).join(', ')
   const styledLink = {
     display: 'inline-flex',
     alignItems: 'center',
@@ -42,21 +42,21 @@ function DetailCountry() {
         </Link>
         <FlexContainer>
             <div>
-                <img src={detail.flags.png} alt='' />  
+                <img src={detail && detail.flags.png} alt='' />  
             </div>
             <FlexItemRight>
                 <h1>{name.countryName}</h1>
                 <div>
                     <div>
-                        <p>Native Name: <span>{detail.nativeName}</span></p>
-                        <p>Population: <span>{detail.population}</span></p>
-                        <p>Region: <span>{detail.region}</span></p>
-                        <p>Sub Region: <span>{detail.subregion}</span></p>
-                        <p>Capital: <span>{detail.capital}</span></p>
+                        <p>Native Name: <span>{detail && detail.nativeName}</span></p>
+                        <p>Population: <span>{detail && detail.population}</span></p>
+                        <p>Region: <span>{detail && detail.region}</span></p>
+                        <p>Sub Region: <span>{detail && detail.subregion}</span></p>
+                        <p>Capital: <span>{detail && detail.capital}</span></p>
                     </div>
                     <div>
-                        <p>Top Level Domain: <span>{detail.topLevelDomain}</span></p>
-                        <p>Currencies: <span>{detail.currencies && detail.currencies[0].name}</span></p>
+                        <p>Top Level Domain: <span>{detail && detail.topLevelDomain}</span></p>
+                        <p>Currencies: <span>{detail && detail.currencies && detail.currencies[0].name}</span></p>
                         <p>Languages: <span>{languages}</span></p>
                     </div>
                 </div>
