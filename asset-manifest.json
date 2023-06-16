@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FMS-countries/static/css/main.e4a58c01.css",
+    "main.js": "/FMS-countries/static/js/main.062a4102.js",
+    "index.html": "/FMS-countries/index.html",
+    "main.e4a58c01.css.map": "/FMS-countries/static/css/main.e4a58c01.css.map",
+    "main.062a4102.js.map": "/FMS-countries/static/js/main.062a4102.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4a58c01.css",
+    "static/js/main.062a4102.js"
+  ]
+}
