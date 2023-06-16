@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/FMS-countries/static/css/main.e4a58c01.css",
-    "main.js": "/FMS-countries/static/js/main.062a4102.js",
+    "main.js": "/FMS-countries/static/js/main.6aa9f78b.js",
     "index.html": "/FMS-countries/index.html",
     "main.e4a58c01.css.map": "/FMS-countries/static/css/main.e4a58c01.css.map",
-    "main.062a4102.js.map": "/FMS-countries/static/js/main.062a4102.js.map"
+    "main.6aa9f78b.js.map": "/FMS-countries/static/js/main.6aa9f78b.js.map"
   },
   "entrypoints": [
     "static/css/main.e4a58c01.css",
-    "static/js/main.062a4102.js"
+    "static/js/main.6aa9f78b.js"
   ]
 }
